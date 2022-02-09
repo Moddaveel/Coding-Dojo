@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 10px;
+    font-family: 'Estonia', cursive;    
+}
+
+Body {
+    background-color: beige;
+}
+
+#container{
+   width: 800px;
+   margin: 0 auto;
+}
+
+#title {
+    width: 800px;
+    height: 100px;
+    color:darkslategray;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.octocat {
+    width: 230px;
+    height: 230px;
+}
+
+#heroes {
+    width: 800px;
+    height: 250px;
+    background-color: #460061;
+    display: flex;
+    justify-content:center;
+}
+
+#troopers {
+    width: 800px;
+    height: 250px;
+    background-color: #999999;
+    display: flex;
+    justify-content: center;
+}
+
+#atpeace {
+    width: 800px;
+    height: 250px;
+    background-color: #3268bd;
+    display: flex;
+    justify-content: center;
+}
+
+#reference {
+    width: 800px;
+    height: 75px;
+    text-align: center;
+    font-size: 25px;
+}
+

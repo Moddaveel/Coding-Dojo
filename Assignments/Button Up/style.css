@@ -1,0 +1,31 @@
+.button {
+    margin: 20px;
+    padding:1px;
+}
+
+#search {
+    color: teal;
+    border: teal 1px solid;
+    height: 30px;
+    width: 150px;
+    border: 2px solid teal;
+    border-radius: 25px;
+    padding: 5px 5px;
+}
+
+#add {
+    background-color:turquoise;
+    color: white;
+    border: none;
+    border-radius:50%;
+    height: 35px;
+    width: 35px;
+}
+
+#createAcct {
+    height: 35px;
+    width: 175px;
+    color: white;
+    background-color: cornflowerblue;
+    box-shadow: 3px 3px 1px 1px black;
+}

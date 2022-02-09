@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="dark" name="color-scheme">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojonary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id='navBar'>
+        <h1>Dojonary</h1>
+        <input id='search' type='text' placeholder='Search'>
+        <button id='login' onclick='logout(this)'>Login</button>
+    </div>
+
+    <div id="bigPapa">
+
+        <div id="topLeft">
+
+            <div class='definitions'>
+                <div class="leftInfo">
+                    <h2 class='ninja'>ninja</h2>
+                    <p class='subject'>noun <br> Plural: ninjas</p>
+                    <button id='likes' onclick='alert("Ninja was liked!")'>13 Likes</button>
+                </div>
+
+                <div class="rightInfo">
+                    <p id='def'>A Practitioner skilled in the <br> <a href=''>Japanese</a> art of <a href=''
+                            target='_blank'>ninjutsu</a></p>
+                </div>
+            </div>
+
+            <div class='definitions'>
+                <div class="leftInfo">
+                    <h2 class='ninja'>ninja</h2>
+                    <p class='subject'>noun <br> Plural: ninjas</p>
+                    <button id='likes' onclick='alert("Ninja was liked!")'>37 Likes</button>
+                </div>
+
+                <div class="rightInfo">
+                    <p id='def'>A <a href=''>programmer</a> who breaks <br> down problems with <a href=''
+                            target='_blank'>zen</a>-like <br> focus</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="topRight">
+            <p id='defined'>Dojonary is <br> defined by <strong>YOU</strong></p>
+            <button id='addDef' onclick='hide(this)'>Add Definition</button>
+        </div>
+
+    </div>
+
+
+    <script src='script.js'></script>
+</body>
+
+</html>

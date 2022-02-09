@@ -1,0 +1,207 @@
+* {
+    margin:0;
+    padding: 0;
+    color: white;
+}
+
+#navbar {
+    height: 70px;
+    width: 100%;
+    background-color:rebeccapurple;
+    display: flex;
+    justify-content: center;
+}
+
+#papaNav {
+    width: 830px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#leftNav {
+    display: flex;
+    align-items: center;
+}
+
+#profile {
+    margin-right: 15px;
+}
+
+#nav {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#rightNav {
+    justify-content: flex-end;
+} 
+
+button {
+    height: 30px;
+    width: 80px;
+}
+
+#bigPapa {
+    width: 100%;
+    background-color: rgb(218, 218, 160);
+    display: flex;
+    justify-content: center;
+}
+
+#leftBro {
+    margin: 20px 10px;
+    height: 700px;
+    width: 400px;
+    /* border: solid 2px rebeccapurple; */
+}
+
+#profilePic {
+    height: 100;
+    width: 401px;
+    background-color: burlywood;
+}
+
+#profilePic img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+    left: 25px;
+}
+
+#personalInfo {
+    height: 200px;
+    width: 381px;
+    background-color: olive;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.info{
+    margin-top: 5px;
+    margin-bottom:7px;
+}
+
+.icon {
+    height: 17px;
+    width: 15px;
+}
+
+#education {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#edBody{
+    height: 100px;
+    width: 401px;
+    background-color: grey;
+}
+
+#credentials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 10px 0px;
+}
+
+#title {
+    padding: 5px;
+    height:30px;
+    width: 391px;
+    background-color:chocolate;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+#credentials p {
+    margin-top: 5px;
+}
+
+#rightSis {
+    margin: 20px 10px;
+    height: 600px;
+    width: 300px;
+}
+
+#connectionRequest {
+    height: 50px;
+    width: 300px;
+    background-color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+#dot{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color:gray;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.names {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:darkolivegreen;
+    padding: 10px 0px 10px; 
+}
+
+.small {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+#dot2 {
+    height: 25px;
+    width: 45px;
+    border-radius: 50%;
+    background-color:gray;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#yourConnections {
+    height: 50px;
+    width: 300px;
+    background-color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-top: 50px;
+}
+
+.friend {
+    display: flex;
+    align-items: center;
+    background-color:darkolivegreen;
+    padding: 10px 20px 10px 0px; 
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+a {
+    padding-left: 10px;
+    height: 50px;
+    background-color:gray;
+    display:flex;
+    align-items: center;
+}
+

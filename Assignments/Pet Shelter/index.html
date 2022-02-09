@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content='dark' name='color-scheme'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shelter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--This is where the Nav Bar begins!!-->
+    <div id='navBar'>
+        <!-- The Top of the Nav Bar Starts Here!!!-->
+        <div id='topNav'>
+            <div id='topLeftNav'>
+                <img id='logo' src='./images/heart-light.png'>
+                <h1 id='shelterName'>Adopt-a-Pet</h1>
+                <p id='credit'>by David</p>
+            </div>
+            <div id='topRightNav'>
+                <p>Find a Pet</p>
+                <p>About</p>
+                <button id='donate' onclick='hide(this)'>Donate</button>
+            </div>
+        </div>
+        <!-- The Bottom of the Nav Bar Stars Here!!!!-->
+        <div id='bottomNav'>
+            <div>
+                <p class='selectors'>Im looking for a...</p>
+                <div class='petFinder'>
+                    <img class='icon' src='./images/paw-light.png'>
+                    <select id='choices' name='petType'>
+                        <option>Any Pet</option>
+                        <option onselect='alert("You are looking for a: Cat")'>Cat</option>
+                        <option onchange='alert("You are looking for a: Dog")'>Dog</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <p class='selectors'>in or near...</p>
+                <div class='petFinder'>
+                    <img class='icon' src='./images/pin-light.png'>
+                    <input type='text' id='location' placeholder='City or Zip Code'>
+                </div>
+            </div>
+            <button id='findFriend' onclick='alert("You are in the right place!")'>Fing your new best friend</button>
+        </div>
+    </div>
+
+    <div class='petCard'>
+        <img class='petPix' src='./images/pepper.jpg'>
+        <div class='petInfo'>
+            <h1 class='petName'>Pepper</h1>
+            <p class='petScript'>Pepper is a slightly shy grey tobby, but she really loves showing her human affection.
+            </p>
+        </div>
+        <div class='pettingFeat'>
+            <p class='petting'><span id='pets1'>3</span> petting(s)</p>
+            <button class='btn' onclick='addPetting(this)'>Pet Pepper</button>
+        </div>
+    </div>
+
+    <div class='petCard'>
+        <img class='petPix' src='./images/bruce.jpg'>
+        <div class='petInfo'>
+            <h1 class='petName'>Bruce</h1>
+            <p class='petScript'>Bruce is a loyal companion. He loves long walks and cold weather.</p>
+        </div>
+        <div class='pettingFeat'>
+            <p class='petting'><span id='pets2'>5</span> petting(s)</p>
+            <button class='btn' onclick='addPetting2(this)'>Pet Bruce</button>
+        </div>
+    </div>
+
+    <div class='petCard'>
+        <img class='petPix' src='./images/oscar.jpg'>
+        <div class='petInfo'>
+            <h1 class='petName'>Oscar</h1>
+            <p class='petScript'>Oscar is bright, energetic and friendly. He is looking for a good home.</p>
+        </div>
+        <div class='pettingFeat'>
+            <p class='petting'><span id='pets3'>7</span> petting(s)</p>
+            <button class='btn' onclick='addPetting3(this)'>Pet Oscar</button>
+        </div>
+    </div>
+
+    <script src='script.js'></script>
+</body>
+
+</html>

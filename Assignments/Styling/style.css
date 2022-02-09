@@ -1,0 +1,43 @@
+*{
+    margin: 5px
+}
+
+.black{
+    display: flex;
+    background-color: black;
+    justify-content:flex-start;
+}
+
+/* h1 {
+    font-style: 
+} */
+
+#my {
+    color: white;
+}
+
+#cloud {
+    color:rgb(91, 156, 182);
+}
+
+.purple {
+    background-color:rebeccapurple;
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+
+/* #completed {
+    font-style: 
+} */
+
+.blue {
+    background-color: skyblue;
+    display: flex;
+    justify-content:flex-end;
+}
+
+#anchor {
+    text-decoration: underline 1px solid;
+    color: rgb(116, 54, 179);
+}
