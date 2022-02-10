@@ -45,32 +45,34 @@ class User:
         self.first_name = first_name
         self.last_name = last_name
         self.email_address = email_address
-        self.account = BankAccount()
+        self.accounts = dict([])
 
-    # def addCheckingAccount(self, accountName, amount):
-    #     self.accounts[accountName] = BankAccount()
+    
 
-    # def addSavingsAccount(self, accountName, amount):
-    #     self.accounts[accountName] = BankAccount()
+    def addCheckingAccount(self, accountName):
+        self.accounts[accountName] = BankAccount()
 
-    # def addRothAccount(self, accountName, amount):
-    #     self.accounts[accountName] = BankAccount(int_rate=.05)
+    def addSavingsAccount(self, accountName):
+        self.accounts[accountName] = BankAccount()
 
-    # def make_deposit(self, accountName, amount):
-    #     self.accounts[accountName].make_deposit(amount)
-    #     print(f'User: {self.first_name} Balance: {self.balance}')
+    def addRothAccount(self, accountName, amount):
+        self.accounts[accountName] = BankAccount(int_rate=.05)
 
-    # def make_withdrawal(self, accountName, amount):
-    #     self.accounts[accountName].make_withdrawal(amount)
-    #     print(f"Sorry, {self.first_name} does not have the requested funds amount.")
+    def make_deposit(self, accountName, amount):
+        self.accounts[accountName].make_deposit(amount)
+        print(f'User: {self.first_name} Balance: {self.balance}')
 
-    # def transfer_money(self, accountName, amount):
-    #     self.accounts[accountName].transfer_money(amount)
-    #     print(f'User: {self.first_name} Balance: {self.balance}')
+    def make_withdrawal(self, accountName, amount):
+        self.accounts[accountName].make_withdrawal(amount)
+        print(f"Sorry, {self.first_name} does not have the requested funds amount.")
 
-    # def interest(self, accountName, amount):
-    #     self.accounts[accountName].interest(amount)
-    #     print(f'User: {self.first_name} Balance: {self.balance}')
+    def transfer_money(self, accountName, amount):
+        self.accounts[accountName].transfer_money(amount)
+        print(f'User: {self.first_name} Balance: {self.balance}')
+
+    def interest(self, accountName, amount):
+        self.accounts[accountName].interest(amount)
+        print(f'User: {self.first_name} Balance: {self.balance}')
 
     def display_user_balance(self):
         self.account.display_user_balance()
