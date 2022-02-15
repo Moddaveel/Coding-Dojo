@@ -19,7 +19,7 @@ class SLList{
         // Check to see if there is a head
         if(this.head == null) {
             this.head = newNode;
-            console.log("There's nothing in this list!")
+
             return this;
         }
 
@@ -33,16 +33,6 @@ class SLList{
     }
 
     addToBack(value) {
-        var newNode = new Node(value)
-        if (this.head == null){
-            this.head == newNode
-            this.tail == this.head
-        }
-        else
-
-        { this.tail.next == newNode
-            this.tail = newNode
-        }
 
     }
 
@@ -52,7 +42,7 @@ class SLList{
 
     removeFromBack() {
 
-   }
+    }
 
    // print the singly linked list
     printValues() {
@@ -75,6 +65,47 @@ class SLList{
         // return 'this' to end function and allow chaining of methods
         return this
     }
+}
+
+
+
+// function contains(val) {
+//     var runner = this.head;
+//     while(runner.next!=null){
+//         if(runner.value==val){
+//             return true;
+//         }
+//         runner=runner.next;
+//     }
+//     if(runner.value==val){
+//         return true;
+//     }
+//     return false;
+// }
+
+
+function contains(value){
+    var node=this.head
+    while(node){
+        if(node.value === value){
+        console.log('true')
+        return true;
+        }
+        node=node.next;
+    }
+    console.log('false')
+    return false
+}
+
+// function print(){
+//     let result = "";
+//     let runner = this.head;
+//     while(runner != null){
+//         result += `${runner.value} 👉 ⇶✨ `; 
+//         runner = runner.next;
+//     }
+//     console.log(result.slice(0, result.length - 6));
+// }
 
 const sll = new SLList();
 sll.addToFront(-3)
