@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,400&family=Quicksand:wght@400;500;600&family=Shizuru&family=Supermercado+One&family=Syne+Tactile&display=swap');
+
+*{
+    margin:0 auto;
+    padding:25px;
+    background-color:slategray;
+    color:bisque;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;  
+}
+
+.header{
+    border: 2px solid #2B2129;
+    border-radius: 5px;
+}
+
