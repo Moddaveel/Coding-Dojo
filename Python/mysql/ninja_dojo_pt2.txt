@@ -1,12 +1,17 @@
--- INSERT INTO dojo (name) 
--- VALUE ('dojo1'); 
--- INSERT INTO dojo (name) 
--- VALUE ('dojo2'); 
--- INSERT INTO dojo (name) 
--- VALUE ('dojo3'); 
+INSERT INTO dojo (name)
+VALUE ('dojo1');
+INSERT INTO dojo (name)
+VALUE ('dojo2');
+INSERT INTO dojo (name)
+VALUE ('dojo3');
 
--- DELETE FROM dojo
--- WHERE id > 0;
+INSERT INTO dojo (name)
+VALUE ("earth"), ("earth"), ("earth"), ("earth");
+
+
+DELETE FROM dojo
+WHERE id > 0;
+
 
 INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
 VALUES ('david', 'modd', '21', NOW(), NOW(), 4);
@@ -15,12 +20,14 @@ VALUES ('matt', 'north', '21', NOW(), NOW(), 4);
 INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
 VALUES ('felix', 'anejo', '21', NOW(), NOW(), 4);
 
+
 INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
 VALUES ('david', 'modd', '21', NOW(), NOW(), 5);
 INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
 VALUES ('matt', 'north', '21', NOW(), NOW(), 5);
 INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
 VALUES ('felix', 'anejo', '21', NOW(), NOW(), 5);
+
 
 INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
 VALUES ('david', 'modd', '21', NOW(), NOW(), 6);
@@ -29,11 +36,16 @@ VALUES ('matt', 'north', '21', NOW(), NOW(), 6);
 INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
 VALUES ('felix', 'anejo', '21', NOW(), NOW(), 6);
 
-SELECT * FROM ninjas 
-JOIN dojo ON  dojo_id = dojo.id
-WHERE dojo.id = 6;
 
 SELECT * FROM ninjas 
 JOIN dojo ON  dojo_id = dojo.id
 WHERE dojo.id = 6;
 
+
+SELECT * FROM ninjas 
+JOIN dojo ON  dojo_id = dojo.id
+WHERE dojo.id = 6;
+
+
+SELECT dojo_id FROM ninjas
+WHERE id = (SELECT MAX(id) FROM ninjas);

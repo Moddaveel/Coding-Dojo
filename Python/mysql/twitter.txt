@@ -1,0 +1,29 @@
+SELECT * FROM tweets
+JOIN faves ON tweets.id = faves.tweet_id
+JOIN users ON faves.user_id = users.id
+WHERE users.id=1
+
+SELECT * FROM users
+JOIN faves ON users.id = faves.user_id
+JOIN tweets ON faves.tweet_id = tweets.id
+WHERE users.id=1
+
+SELECT * FROM users; 
+
+SELECT * FROM tweets
+JOIN faves ON tweets.id = faves.tweet_id
+JOIN users ON faves.user_id = users.id
+WHERE users.id=1;
+
+SELECT * FROM users
+JOIN faves ON users.id = faves.user_id
+JOIN tweets ON faves.tweet_id = tweets.id
+WHERE users.id=1;
+
+SELECT * FROM tweets
+JOIN faves ON tweets.id = faves.tweet_id
+JOIN users ON faves.user_id = users.id;
+
+SELECT * FROM tweets
+LEFT JOIN faves ON tweets.id = faves.id
+LEFT JOIN users on faves.user_id = users.id;
