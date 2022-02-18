@@ -1,0 +1,26 @@
+*{
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#big_papa{
+    height: 700px;
+    width: 500px;
+    background-color: slategray;
+    font-size: 20px;
+}
+
+h1{
+    color: yellowgreen;
+    font-size: 50px;
+}
+
+#comment_section{
+    background-color:rebeccapurple;
+}
+
+#button{
+    width:500px;
+    display: flex;
+    align-items: center;
+}

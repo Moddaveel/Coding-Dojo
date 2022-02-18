@@ -25,6 +25,7 @@ def create_user():
 
 @app.route('/reset', methods=['POST'])
 def create_reset():
+    print('Yay!!! You are reset now!')
     session.clear()
     return redirect("/")
 

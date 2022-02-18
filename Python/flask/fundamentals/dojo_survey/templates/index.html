@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="dark" name="color-scheme">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/style.css') }}">
+    <title>Dojo Survey</title>
+</head>
+
+<body>
+
+    <div id="big_papa">
+
+        <h1>Dojo Survery</h1>
+
+        <div id="name">
+            <p class="text">Your Name:</p>
+            <input type="text" name="full_name" placeholder="Enter your name">
+        </div>
+
+        <div id="dojo_location">
+            <p class="text">Dojo Location:</p>
+            <select name="location" placeholder="--Select A Location--">
+                <!-- Select placeholders not functioning as intended -->
+                <option>Chicago</option>
+                <option>Seattle</option>
+                <option>Online</option>
+                <option>Burbank</option>
+                <option>Bellevue</option>
+            </select>
+        </div>
+
+        <div id="fave_language">
+            <p class="text">Favorite Language:</p>
+            <select name="location" placeholder="--Select A Language--">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+                <option>Python</option>
+                <option>C#</option>
+            </select>
+        </div>
+
+        <div id="comment_section">
+            <p class="text">Comment(optional):</p>
+            <textarea name="comment" cols="50" rows="5" placeholder="Describe yourself here..."></textarea>
+        </div>
+
+        <div id="button">
+            <button><a href="http://localhost:5000/results">Submit</a></button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
