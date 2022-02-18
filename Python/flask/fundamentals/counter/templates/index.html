@@ -6,22 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counter</title>
-    <link rel="stylesheet" href=".style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/style.css') }}">
 </head>
 
 <body>
-    <h1>Index Page</h1>
-    <h3>Create a User</h3>
-    
-    <form action="/counter" method="post">
-        <button id="click">Count</button>
-    </form>
-    
-    <form action="reset" method="post">
-        <button>Reset</button>
-    </form>
+    <div id="tracking">
+        </h1 class='display'>Counter</h1>
+        <h3 class='display'>{{ session['cnt'] }}</h3>
+    </div>
 
-    <h2>{{ session['cnt'] }}</h2>
+    <div>
+        <form action="/counter" method="post">
+            <button class="button" id="click">Counter</button>
+            </form>
+            <form action="/reset" method="post">
+                <button class="button">Reset</button>
+            </form>
+    </div>
 </body>
 
 </html>

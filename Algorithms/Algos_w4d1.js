@@ -33,6 +33,12 @@ class SLList{
     }
 
     addToBack(value) {
+        var newNode = new Node(value);
+        let runner = runner.next;
+        if(this.head == null) {
+            this.head = newNode;
+            return this;
+        }
 
     }
 
@@ -84,6 +90,7 @@ class SLList{
 // }
 
 
+
 function contains(value){
     var node=this.head
     while(node){
@@ -97,6 +104,8 @@ function contains(value){
     return false
 }
 
+
+
 // function print(){
 //     let result = "";
 //     let runner = this.head;
@@ -107,6 +116,11 @@ function contains(value){
 //     console.log(result.slice(0, result.length - 6));
 // }
 
+
+
 const sll = new SLList();
-sll.addToFront(-3)
+sll.addToFront(9)
 sll.printValues()
+sll.addToFront(7)
+sll.printValues()
+

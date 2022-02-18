@@ -1,0 +1,21 @@
+*{
+    margin: 0 auto;
+    padding: 20px;
+    width: 700px;
+    height: 100px;
+    background-color:slategray;
+}
+
+.button {
+    width: 100px;
+    height: 25px;
+    border : 2px solid yellow;
+    border-radius : 5px;
+    box-shadow: 4px 4px 2px black;
+    font-size:15px;
+    text-align:center;
+}
+
+.display {
+    font-size: 90px;
+}
