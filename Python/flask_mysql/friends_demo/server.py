@@ -8,8 +8,28 @@ from friend import Friend
 def index():
     # call the get all classmethod to get all friends
     friends = Friend.all_friends()
-    print(friends)
     return render_template("index.html", all_friends = friends)
+
+@app.route("/<int:friend_id>")
+def show_friend(friend_id):
+    data={
+        "id": friend_id
+    }
+    friend = Friend.one_friend(data)
+    return render_template("show_one.html", friend = friend)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)

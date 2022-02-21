@@ -22,3 +22,9 @@ class Friend:
 
         print(all_friends)
         return all_friends
+
+    @classmethod
+    def one_friend(cls, data):
+        query = "SELECT * FROM friends WHERE id = %(id)s;"
+        results = connectToMySQL("friend_schema").query_db(query, data)
+        return cls(results[0])

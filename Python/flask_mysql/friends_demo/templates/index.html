@@ -10,15 +10,13 @@
 </head>
 
 <body>
-
-    <h1>{{ all_friends }}</h1>
-
     <h2>All Friend Info:</h2>
     {% for one_friend in all_friends %}
 
-    <p>{{ one_friend.first_name }}</p>
+    <p><a href="/{{ one_friend.id }}">{{ one_friend.first_name }}</a></p>
     <p>{{ one_friend.last_name }}</p>
     <p>{{ one_friend.occupation }}</p>
+    <p>===========================</p>
 
     {% endfor %}
 
